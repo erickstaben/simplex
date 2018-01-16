@@ -28,4 +28,4 @@ function simplex(z,A,b)
 
 return X
 end
-           #return "Solução ótima? :  " *string(status[1])" Solução Infinita? : "*string(status[2])
+              #return "Solução ótima? :  " *string(status[1])" Solução Infinita? : "*string(status[2])
