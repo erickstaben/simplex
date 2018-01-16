@@ -6,7 +6,6 @@ function simplex(c,A,b)
    status = [false,false]
    Base,NBase = collect(n+1:n+m),collect(1:n)
    X = A[:,Base]\b
-   println(c)
     while !(status[1] || status[2])
           CNbase = A[:,NBase]' *((A[:,Base])'\c[Base,:]) - c[NBase,:]
           minNB = findmin(CNbase)
@@ -27,4 +26,3 @@ function simplex(c,A,b)
     end
 return X
 end
-            
