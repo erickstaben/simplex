@@ -5,4 +5,3 @@ b = [ 20; 25; 30]
 solution = simplex(z,A,b)
 toc()
 println(solution)
-aslo
