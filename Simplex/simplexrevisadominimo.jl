@@ -1,4 +1,5 @@
 function simplex(c,A,b)
+   tic()
    m, n = (size(A,1), size(A,2))
    c = [c ; zeros(m,1)]
    A = [A eye(m)]
@@ -25,4 +26,5 @@ function simplex(c,A,b)
         Base[ind_menor] , NBase[minNB[2]] = (NBase[minNB[2]],Base[ind_menor])
     end
 return X
+    
 end
